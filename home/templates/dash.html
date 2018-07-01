@@ -1,0 +1,53 @@
+<!--
+  This file is a demo file for producing a number of divs as per requirement. Note, these python codes that we use here in this html file can be used through Django only.
+-->  
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+ <head>
+  <link href="../../static/dash.css" rel="stylesheet" type="text/css"/><!-- importing the styling sheet. Though most of the styling has been done as inline CSS, few styling has been done through external CSS  -->
+  <meta charset="utf-8"/>
+ </head>
+ <body>
+  <h1 style="color: white;text-align: center;padding:0;font-size:3em;margin-bottom: 0 ; font-family: Palatino Linotype;">
+   Home Automation System
+  </h1>
+  <!-- Remove the below comments if you want to add a weather applet too -->
+  <!-- 
+	<iframe id="weather" src="https://www.meteoblue.com/en/weather/widget/three?geoloc=detect&nocurrent=0&noforecast=0&days=4&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&layout=image"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 26%;height:10%"></iframe> -->
+  <form action="/home/work" class="form" method="POST"> <!-- The form for posting requests on the django server -->
+   {% with ''|center:10 as range %} 
+		{% for i in range %}
+   <div class="applet">
+    <button id="applet_button{{forloop.counter}}" name="applet_button{{forloop.counter}}" style="background-color: black; cursor: pointer; color: #D7F0F5; width: 70%;" value="1"> 
+     <img height="100px" id="applet_image{{forloop.counter}}" src="../../static/light_on.png" width="100px"/>
+     <br/>
+     <span id="applet_text{{forloop.counter}}">
+      Light{{forloop.counter}} ON
+     </span>
+    </button>
+   </div>
+
+   <!--<script type="text/javascript">
+
+
+ 					document.getElementById("applet_button{{forloop.counter}}").onclick= function(){
+					var v =document.getElementById('applet_image{{forloop.counter}}').src;
+					if (String(v)=="http://127.0.0.1:8000/static/light_on.png"){
+						document.getElementById('applet_image{{forloop.counter}}').src = '../../static/light.png';
+						document.getElementById('applet_button{{forloop.counter}}').style.backgroundColor = 'black'; 
+						document.getElementById('applet_text{{forloop.counter}}').textContent = "Light{{forloop.counter}} OFF"; 
+					}
+					else{
+						document.getElementById('applet_image{{forloop.counter}}').src = '../../static/light_on.png';
+						document.getElementById('applet_button{{forloop.counter}}').style.backgroundColor= 'black'; 
+						document.getElementById('applet_text{{forloop.counter}}').textContent = "Light{{forloop.counter}} ON";
+					}
+				}
+	 </script>-->
+   {% endfor %}
+			{% endwith %}
+  </form>
+  
+ </body>
+</html>

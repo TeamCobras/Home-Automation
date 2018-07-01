@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <link href="../../static/dash.css" rel="stylesheet" type="text/css"/>
+  <meta charset="utf-8"/>
+  <script type="text/javascript">
+   setInterval(function() {
+	var s='http://127.0.0.1:8000/home';
+	window.location.href =s;
+}, 1500);
+  </script>
+ </head>
+ <body>
+  <h1 style="color: white;text-align: center;padding:0;font-size:3em;margin-bottom: 0 ; font-family: Palatino Linotype;">
+   Home Automation System
+  </h1>
+  <!--
+	<iframe id="weather" src="https://www.meteoblue.com/en/weather/widget/three?geoloc=detect&nocurrent=0&noforecast=0&days=4&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&layout=image"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 26%;height:10%"></iframe> -->
+  <form action="/home/work" class="form" method="POST">
+   <div class="applet">
+    <button id="applet_button1" name="applet_button1" style="background-color: black; cursor: pointer; color: #D7F0F5; width: 70%;" value="1">
+     <img height="80%" id="applet_image1" src="../../static/light.png" width="100%"/>
+     Light1 OFF
+    </button>
+   </div>
+   <div class="applet">
+    <button id="applet_button2" name="applet_button2" style="background-color: black; cursor: pointer; color: #D7F0F5; width: 70%;" value="1">
+     <img height="80%" id="applet_image2" src="../../static/light.png" width="100%"/>
+     Light2 OFF
+    </button>
+   </div>
+   <div class="applet">
+    <button id="applet_button3" name="applet_button3" style="background-color: white; cursor: pointer; color: black; width: 70%;" value="1">
+     <img height="80%" id="applet_image3" src="../../static/camera.png" width="90%"/>
+     Camera OFF
+    </button>
+   </div>
+   <div class="applet">
+    <button id="applet_button4" name="applet_button4" style="background-color: white; cursor: pointer; color: black; width: 70%;" value="1">
+     <img height="80%" id="applet_image4" src="../../static/record.png" width="80%"/>
+     Recorder OFF
+    </button>
+   </div>
+   <p id="tag">
+    designed by
+    <span>
+     Kishen N Gowda
+    </span>
+   </p>
+  </form>
+ </body>
+</html>
