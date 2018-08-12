@@ -20,4 +20,4 @@ This Repo covers the software part of our project on Home Automation system.
 
 
 Try out the home automation system. 
-We will be uploading the demonstration video soon on Youtube!
+https://www.youtube.com/watch?v=pkDGK62ZnZk is the link to our demonstration video. We will soon be uploading a making video with deeper explanation soon.
