@@ -1,13 +1,13 @@
 # Home-Automation
-SSTP
+## SSTP
 
-"# Home-Automation"
+## "Home-Automation"
 
-Special thanks to Nassir Mallik https://github.com/nassir-malik/ He helped us a lot through his youtue channel named Netmedias(https://www.youtube.com/channel/UCn8v7OzXk7IqRdKZdf14yjA) in connecting Alexa to our home automation system.
+Special thanks to Nassir Mallik https://github.com/nassir-malik/ He helped us a lot through his youtube channel named Netmedias(https://www.youtube.com/channel/UCn8v7OzXk7IqRdKZdf14yjA) in connecting Alexa to our home automation system.
 
 This Repo covers the software part of our project on Home Automation system.
 
-#Instructions:
+### Instructions:
 
 1)Clone or download all the files.
 2)Open 4 terminals and move to the project folder in all the terminals.
