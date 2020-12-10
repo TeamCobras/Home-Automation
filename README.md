@@ -9,14 +9,14 @@ This Repo covers the software part of our project on Home Automation system.
 
 ### Instructions:
 
-1)Clone or download all the files.
-2)Open 4 terminals and move to the project folder in all the terminals.
-3)Run the following four codes in each terminal respectively.
+1) Clone or download all the files.<br>
+2) Open 4 terminals and move to the project folder in all the terminals.<br>
+3) Run the following four codes in each terminal respectively.
     - python3 manage.py runserver
     - sudo python3 run.py
     - sudo python3 final.py
     - sudo python3 switch.py
-4) Open the link in the first terminal starting with 127.... in a browser.
+4) Open the link in the first terminal starting with 127.... in a browser.<br>
 
 
 Try out the home automation system. 
